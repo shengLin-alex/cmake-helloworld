@@ -7,5 +7,12 @@ int main(int argc, char** argv)
 
     delete object;
 
+    auto lambda = [](auto a, auto b)
+    {
+        return a + b;
+    };
+
+    std::cout << lambda(10, 34);
+
     return 0;
 }
